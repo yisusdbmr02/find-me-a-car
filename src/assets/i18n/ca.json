@@ -1,0 +1,27 @@
+{
+    "sign-in":"Iniciar sessió",
+    "sign-up":"Regístrate",
+    "sign-out":"Tancar sessió",
+    "insert-email":"Introdueix un correu electrònic",
+    "insert-password":"Introdueix una contrasenya",
+    "email":"Correu electrònic",
+    "password":"Contrasenya",
+    "sign-with":"Iniciar sessió amb",
+    "forgot":"Oblideu la teva contrasenya?",
+    "user-created-success":"Usuari creat correctament!",
+    "user-created-error": "Error creant usuaris. Per això intenteu-ho de nou.",
+    "user-signin-success":"Inici de sessió realitzat correctament!",
+    "user-signin-error": "Error iniciant sessió. Per això intenteu-ho de nou.",
+    "es":"Espanyol",
+    "en":"Anglès",
+    "fr":"Francès",
+    "it":"Italià",
+    "de":"Alemany",
+    "zh":"Xinès",
+    "ca":"Català",
+    "h-email":"Gràcies per registrar-te!",
+    "p1-email":"S'ha enviat un correu de confirmació a",
+    "p2-email":"Si us plau comprova el teu correu electrònic i fes clic sobre l'enllaç per a verificar el teu correu electrònic",
+    "resend-email":"Reenviar correu"
+    
+}

@@ -1,0 +1,53 @@
+<section class="img vh-100">
+    <div class="container-fluid h-100">
+      <div class="row pt-5 d-flex justify-content-center align-items-center ">
+        <div class=" col-lg-4 col-md-8">
+        <div class="row text-dark text-center">
+          <div class="col">
+            <h1 class="text-light">Find me a car</h1>
+          </div>
+        </div>
+        <div class="card shadow">
+          <div class="card-header">
+            <h2 class="text-muted text-center">{{ 'sign-up' | translate }}</h2>
+          </div>
+          <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+            <div class="card-body">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <div class="row">
+                  <div class="col">
+                    <input type="email" required id="sign-upEmail" formControlName="email" name="sign-upEmail" class="form-control mt-2 form-control-lg"
+                      placeholder="{{ 'insert-email' | translate }}" />
+                    <label class="form-label" for="form3Example3">{{ 'email' | translate }}</label>
+                  </div>
+                </div>
+              </div>
+              <!-- Password input -->
+              <div class="form-outline mb-3">
+                <input type="password" required id="Sign-upPass" formControlName="password" name="Sign-upPass" class="form-control form-control-lg"
+                  placeholder="{{ 'insert-password'| translate }}" />
+                <label class="form-label" for="form3Example4">{{ 'password'| translate }}</label>
+              </div>
+              <div class="row">
+                <div class="col">
+                <span><div *ngIf="successMessageVisible" class="bg-success">
+                  {{ 'user-created-success' | translate }}                </div>
+                
+                <div *ngIf="errorMessageVisible" class="bg-danger">
+                  {{ 'user-created-error' | translate }}
+                </div></span>  
+                </div>
+              </div>
+              <div class="text-center d-flex justify-content-between mb-1 text-lg-start ">
+                <button type="submit" class="btn btn-dark btn-lg"> <i class="bi bi-box-arrow-in-right"></i>&nbsp; 
+                  {{ 'sign-up' | translate }}</button>
+                <a routerLink="/login" class="btn btn-primary  btn-lg " data-toggle="modal" data-target="#modalRegister"><i class="bi bi-person-circle"></i>&nbsp; {{ 'sign-in' | translate }}</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+    </div>

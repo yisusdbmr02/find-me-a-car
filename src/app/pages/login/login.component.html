@@ -1,0 +1,65 @@
+  <section class="img vh-100">
+    <div class="container-fluid h-100">
+      <div class="row pt-5 d-flex justify-content-center align-items-center ">
+        <div class=" col-lg-5 col-md-8">
+        <div class="row text-dark text-center">
+          <div class="col">
+            <h1 class="text-light">Find me a car</h1>
+          </div>
+        </div>
+        <div class="card shadow">
+          <div class="card-header">
+            <h2 class="text-muted text-center">{{ 'sign-in' | translate }}</h2>
+          </div>
+          <form [formGroup]="formLog" (ngSubmit)="onSubmit()">
+            <div class="card-body">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <div class="row">
+                  <div class="col">
+                    <input type="email" id="loginEmail"  name="loginUser" formControlName="email" class="form-control mt-2 form-control-lg"
+                      placeholder="{{ 'insert-email' | translate }}" />
+                    <label class="form-label" for="form3Example3">{{ 'email' | translate }}</label>
+                  </div>
+                </div>
+              </div>
+              <!-- Password input -->
+              <div class="form-outline mb-3">
+                <input type="password" id="loginPass" formControlName="password"  name="loginPass" class="form-control form-control-lg"
+                  placeholder="{{ 'insert-password' | translate }}" />
+                <label class="form-label" for="form3Example4">{{ 'password' | translate }}</label>
+              </div>
+              <div class="row">
+                <div class="col">
+                <span><div *ngIf="successMessageVisible" class="bg-success">
+                  {{ 'user-signin-success' | translate }}
+                </div>
+                
+                <div *ngIf="errorMessageVisible" class="bg-danger">
+                  {{ 'user-signin-error' | translate }}
+                </div></span>  
+                </div>
+              </div>
+              <div class="text-center d-flex justify-content-between mb-1 text-lg-start ">
+                <button type="submit" class="btn btn-dark btn-lg"> <i class="bi bi-box-arrow-in-right"></i>&nbsp; 
+                  {{ 'sign-in' | translate }}</button>
+                <a routerLink="/sign-up" class="btn btn-primary btn-lg " data-toggle="modal" data-target="#modalRegister">  <i class="bi bi-person-circle"></i>&nbsp; {{ 'sign-up' | translate }}</a>
+              </div>
+              <div class="row  align-items-center ">
+                    <button (click)="signInWithGoogle()" class="btn btn-danger mt-1 btn-block" type="button">{{ 'sign-with' | translate }} Google <i class="bi bi-google"></i></button>
+                  
+                    <button (click)="signInWithFacebook()" class="btn btn-primary mt-2 btn-block" type="button">{{ 'sign-with' | translate }} Facebook <i class="bi bi-facebook"></i></button>
+                  
+                    <button (click)="signInWithTwitter()" class="btn btn-info mt-2 btn-block" type="button">{{ 'sign-with' | translate }} Twitter <i class="bi bi-twitter"></i></button>
+                  
+                </div>
+              <br>
+              <div class="">
+                <a class="btn" routerLink="/forgot"> {{ 'forgot' | translate }}</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>

@@ -1,0 +1,27 @@
+{
+    "sign-in":"Accedi",
+    "sign-up":"Registro",
+    "sign-out":"Disconnettersi",
+    "insert-email":"Inserisci il tuo indirizzo di posta elettronica.",
+    "insert-password":"Inserisci una password ",
+    "email":"E-mail",
+    "password":"Password",
+    "sign-with":"Accedi",
+    "forgot":"Password dimenticata?",
+    "user-created-success":"Utente creato correttamente",
+    "user-created-error": "Errore creando utenti. Si prega di riprovare.",
+    "user-signin-success":"Accesso effettuato con successo!",
+    "user-signin-error": "Accesso non riuscito. Si prega di riprovare.",
+    "es":"Spagnolo",
+    "en":"Inglese",
+    "fr":"Francese",
+    "it":"Italiano",
+    "de":"Tedesco",
+    "zh":"Cinese",
+    "ca":"Catalano",
+    "h-email":"Grazie per esserti iscritto!",
+    "p1-email":"È stata inviata un'e-mail di conferma a",
+    "p2-email":"Controlla la tua email e fai clic sul collegamento per verificare la tua email",
+    "resend-email":"Rinvia l'e-mail"
+
+}

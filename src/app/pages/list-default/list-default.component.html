@@ -1,0 +1,74 @@
+<!--<div class="grid flex justify-content-center xl:p-3 md:grid p-1">
+    <div class="col  xl:col-8">
+        <div class="card p-2">
+            <p-dataView #dv [value]="products">
+                <ng-template let-product pTemplate="listItem">
+                    <div class="md:col-12 border-round-sm">
+                        <div class="grid">
+                            <div class="col">
+                                <h2 class="text-center">{{ product.name }}</h2>
+                                <p class="text-center m-0 p-0">{{product.category}}</p>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="text-end">{{product.price+'€'}}</h4>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="col">
+                                <p class="ml-3 m-0 p-0">{{product.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-dataView>
+        </div>
+    </div>
+</div>-->
+<div class="grid flex justify-content-center mt-2 ">
+    <div class="col-12 xl:col-3 md:col-5 lg:col-4 mx-1 ">
+        <p-card header="{{products[0].name}}" class="card" styleClass=" shadow-4 bg-teal-100" subheader="{{products[0].category}} - {{products[0].description}}">
+            <ng-template pTemplate="header">
+                <img class="m-1 flex justify-content-center" src="assets/img/{{products[0].img}}" alt="Image">
+            </ng-template>
+            <ng-template pTemplate="footer">
+              <div class="col flex justify-content-between">
+                <span><p class="mt-0"><p-tag [value]="products[0].status" [severity]="getSeverity(products[0])||'success'"></p-tag></p>
+                <p-rating [(ngModel)]="products[0].rating" [readonly]="false" [cancel]="false"></p-rating>
+                </span>
+                <p-button label="{{products[0].price|currency:'EUR':'symbol':'4.2-2':'fr'}}" styleClass="p-button-rounded p-button-info"></p-button>
+            </div>
+            </ng-template>
+        </p-card>
+    </div>
+    <div class="col-12  xl:col-3 md:col-5 lg:col-4 mx-1">
+        <p-card header="{{products[1].name}}" class="card" subheader="{{products[1].category}} - {{products[1].description}}" styleClass=" shadow-4 bg-orange-100">
+            <ng-template pTemplate="header">
+              <img class="m-1 flex justify-content-center" src="assets/img/{{products[1].img}}" alt="Image">
+            </ng-template>
+            <ng-template pTemplate="footer">
+              <div class="col flex justify-content-between">
+                <span><p class="mt-0"><p-tag [value]="products[1].status" [severity]="getSeverity(products[1])||'success'"></p-tag></p>
+                    <p-rating [(ngModel)]="products[1].rating" [readonly]="false" [cancel]="false"></p-rating>
+                </span>
+                <p-button label="{{products[1].price|currency:'EUR':'symbol':'4.2-2':'fr'}}" styleClass="p-button-rounded p-button-info"></p-button>
+            </div>
+            </ng-template>
+        </p-card>
+    </div>
+    <div class="col-12  xl:col-3 md:col-5 lg:col-4 mx-1">
+        <p-card header="{{products[2].name}}" class="card" subheader="{{products[2].category}} - {{products[2].description}}" styleClass=" shadow-4 bg-green-100">
+            <ng-template pTemplate="header">
+                <img class=" m-1 flex justify-content-center" src="assets/img/{{products[2].img}}" alt="Image">
+            </ng-template>
+            
+            <ng-template pTemplate="footer">
+              <div class="col  flex justify-content-between">
+                <span class=""><p class="mt-0"><p-tag [value]="products[2].status" [severity]="getSeverity(products[2])||'success'"></p-tag></p>
+                    <p-rating [(ngModel)]="products[2].rating" [readonly]="false" [cancel]="false"></p-rating>
+                    </span>
+                <p-button label="{{products[2].price|currency:'EUR':'symbol':'4.2-2':'fr'}}" styleClass="p-button-rounded p-button-info"></p-button>
+            </div>
+            </ng-template>
+        </p-card>
+    </div>
+</div>

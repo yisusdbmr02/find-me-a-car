@@ -1,0 +1,27 @@
+{
+    "sign-in":"登录",
+    "sign-up":"你你可以到那边去登记",
+    "sign-out":"注销",
+    "insert-email":"输入电子邮件",
+    "insert-password":"引入了一个密码",
+    "email":"电子邮件",
+    "password":"密码",
+    "sign-with":"登录与",
+    "forgot":" 你忘了你密码?",
+    "user-created-success":"用户设立了正确!",
+    "user-created-error": "创建用户时出错。请再试一次",
+    "user-signin-success":"正确登录!",
+    "user-signin-error": "登录错误。请再试一次",
+    "es":"西班牙语",
+    "en":"英语",
+    "fr":"法语",
+    "it":"意大利",
+    "de":"德语",
+    "zh":"中文",
+    "ca":"加泰罗尼亚",
+    "h-email":"感谢您的注册！",
+    "p1-email":"确认电子邮件已发送至",
+    "p2-email":"请检查您的电子邮件并点击链接来验证您的电子邮件",
+    "resend-email":"重发电子邮件"
+    
+}

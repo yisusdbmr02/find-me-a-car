@@ -1,0 +1,26 @@
+{
+    "sign-in":"Anmelden",
+    "sign-up":"Registrieren",
+    "sign-out":"Abmelden.",
+    "insert-email":"Geben Sie hierzu Ihre E-Mail-Adresse ",
+    "insert-password":"Geben Sie ein Passwort ein.",
+    "email":"E-Mail",
+    "password":"Passwort",
+    "sign-with":"Anmeldung mit",
+    "forgot":" Passwort vergessen?",
+    "user-created-success":"Erstellten Benutzer korrekt",
+    "user-created-error": "Bitte versuchen Sie es erneut.",
+    "user-signin-success":"Die Anmeldung wurde erfolgreich durchgeführt!",
+    "user-signin-error": "Bitte versuchen Sie es erneut.",
+    "es":"Spanisch",
+    "en":"Englisch",
+    "fr":"Französisch",
+    "it":"Italienisch",
+    "de":"Deutsch",
+    "zh":"Chinesisch",
+    "h-email":"Danke für's Registrieren!",
+    "p1-email":"Eine Bestätigungs-E-Mail wurde an gesendet",
+    "p2-email":"Bitte überprüfen Sie Ihre E-Mails und klicken Sie auf den Link, um Ihre E-Mail zu bestätigen",
+    "resend-email":"E-Mail zurücksenden"
+
+}

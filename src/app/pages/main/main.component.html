@@ -1,0 +1,23 @@
+<nav class="navbar bg-info " *ngIf="element == true">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><h3>FIND ME A CAR</h3></a>    
+            <div class="d-flex justify-content-end">
+                <div class="m-2"><app-select-lenguage class=""></app-select-lenguage></div>
+                <div class="m-2">
+                    <a class="btn btn-dark" (click)="hideData()" routerLink="/login"
+                      >{{ 'sign-in' | translate }}</a
+                    >
+                  </div>
+                  <div class="m-2">
+                    
+                    <a
+                      class="btn btn-primary"
+                      (click)="hideData()"
+                      routerLink="/sign-up"
+                      tabindex="-1"
+                      >{{ 'sign-up' | translate }}</a
+                    >
+                  </div>
+            </div>
+    </div>
+</nav>

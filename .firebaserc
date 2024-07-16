@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "find-me-a-car-3819e": {
+      "hosting": {
+        "Prueba001": [
+          "find-me-a-car-3819e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "find-me-a-car-3819e"
+  }
+}
